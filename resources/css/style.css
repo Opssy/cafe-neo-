@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    background-color: #fff;
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    color: #555;
+  }
+.row {
+  margin-top: -11px;
+}
+.bg-video {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+   
+ }
+    .bg-video__content {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; 
+    }
+    h1 {
+      margin-top: 350px;
+      margin-bottom: 20px;
+      color: #fff;
+      font-size: 240%;
+      word-spacing: 4px;
+      letter-spacing: 1px;
+      text-align: center;
+  }
+
+    .btn:link,
+.btn:visited,
+input[type=submit] {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-left: 500px;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+}
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 11px;
+}
+
+/*Main Nav*/
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 53px;
+  margin-right: 23px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color:  #e67e22;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+.product ul{
+  /*style all lists below the top-level list*/
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: none;
+  padding: 20px 0;
+  position: absolute;
+  min-width: 140px;
+  z-index: 10;
+  visibility: hidden;
+}
+
+.product  ul ul li {
+  position: relative;
+}
+
+.product ul ul ul {
+  /*style all lists below the second-level list*/
+  border: 1px solid #ccc;
+  border-right: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
+  left: -100%;
+  top: -1px;
+}
+
+.product ul.sub-product:hover {
+ /* show the menu of the list item being hovered over*/
+  visibility: visible;
+  border: 2px solid black;
+}
+/*********SECTION PRODUCT*******/
+ h2{
+  margin-top: 27px;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 180%;
+  word-spacing: 2px; 
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+h2:after {
+  display: block;
+  content: " ";
+  background-color: #e67e22;
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 30px
+}
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+img {
+  border-style: none;
+}
+.col:first-child {
+  margin-left: 71px;
+}
+.box {
+  padding: 1%;
+}
+.span-1-of-4 {
+  width: 28.8%;
+}
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+.span-1-of-3 {
+  width: 28.8%;
+}
+ .span-1-of-3 img:hover {
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+  opacity: 1;
+}
+
+/*********INSTAGRAM********/
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.5s;
+  transition: opacity 0.2s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.2s;
+  transition: transform 0.5s, opacity 0.2s, -webkit-transform 0.5s;
+
+}
+
+.meal-photo img:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  opacity: 1;
+}
