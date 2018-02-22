@@ -238,4 +238,143 @@ h3 {
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
   opacity: 1;
+}/*****FOOTER*******/
+
+.widget_area {
+  background-color: #f2f2f2;
+}
+.footer_widgets {
+  padding: 54px 0 27px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sub__row { 
+  /* change the class row  */
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-sm-3 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sidepanel {
+  margin-bottom: 33px;
+}
+.sidepanel .title .footer_widgets{
+  color: #878787;
+}
+.sidepanel h6.title {
+  margin-bottom: 18px;
+}
+h6, h6 span, h6 a {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 600 !important;
+}
+h6{
+  letter-spacing: 1px;
+  padding: 0;
+  margin: 0 0 15px;
+  margin-bottom: 15px;
+text-transform: uppercase;
+}
+.footer_widgets .sidepanel div{
+  color: #878787;
+}
+.sidepanel h6.title {
+  margin-bottom: 18px;
+}
+.flickr_widget_wrapper {
+  overflow: hidden;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  padding: 5px 0 0;
+  margin-right: -6px;
+  margin-bottom: -7px;
+}
+.widget_flickr .flickr_badge_image {
+  padding: 0 6px 6px 0;
+  width: 25%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  height: auto;
+  float: none;
+  vertical-align: top;
+}
+.flickr_badge_image {
+  margin: 0 10px 10px 0;
+  width: 72px;
+  height: 72px;
+  float: left;
+  background: 0 0;
+  padding: 0;
+}
+.widget_nav_menu{
+  margin-bottom: 28px;
+}
+.sidepanel {
+  margin-bottom: 33px;
+}
+.widget_nav_menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.widget_nav_menu ul li{
+  margin: 0;
+  padding: 0 0 10px;
+  position: relative;
+}
+.sidepanel li.current-menu-item a{
+  color: #ec8618;
+}
+.footer_widgets .sidepanel a {
+  color: #cccccc;
+}
+.widget_nav_menu ul li a{
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.sidepanel a {
+  transition: background-color 300ms,border-color 300ms,color 300ms;
+  -webkit-transition: background-color 300ms,border-color 300ms,color 300ms;
+}
+a {
+  color: #525359;
+}
+a, a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+.widget_contacts .widget_contacts_block:last-child {
+  padding-bottom: 0;
+}
+.widget_contacts .widget_contacts_block:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+.widget_contacts .widget_contacts_name {
+    font-style: italic;
+    width: 37%;
+    display: inline-block;
+    /* float: left; */
+}
+.widget_contacts DIV.widget_contacts_value {
+  color: #cccccc;
+}
+.widget_contacts .widget_contacts_value {
+  width: 63%;
+  display: inline-block;
+  /* float: left; */
 }
