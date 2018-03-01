@@ -69,7 +69,7 @@ input[type=submit] {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .logo {
   height: 100px;
@@ -106,40 +106,50 @@ input[type=submit] {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
-.product ul{
-  /*style all lists below the top-level list*/
-  background: #f5f5f5;
-  border: 1px solid #ccc;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top: none;
-  padding: 20px 0;
-  position: absolute;
-  min-width: 140px;
-  z-index: 10;
-  visibility: hidden;
+.dropbtn {
+  /* background-color: #4CAF50;
+  color: white; */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
 
-.product  ul ul li {
+.dropdown {
   position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.product ul ul ul {
-  /*style all lists below the second-level list*/
-  border: 1px solid #ccc;
-  border-right: none;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  padding: 0;
-  left: -100%;
-  top: -1px;
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.product ul.sub-product:hover {
- /* show the menu of the list item being hovered over*/
-  visibility: visible;
-  border: 2px solid black;
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
+
+
 /*********SECTION PRODUCT*******/
  h2{
   margin-top: 27px;
@@ -238,41 +248,42 @@ h3 {
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
   opacity: 1;
-}/*****FOOTER*******/
-
-.widget_area {
-  background-color: #f2f2f2;
 }
-.footer_widgets {
+.widget_area{
+  background-color: #f2f2f2;
+
+}
+footer_widgets{
   padding: 54px 0 27px;
 }
-.container {
+.container{
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.sub__row { 
-  /* change the class row  */
-  margin-left: -15px;
-  margin-right: -15px;
+.sub__row{
+  margin-left: -43px;;
 }
-.col-sm-3 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+.sm-1-of-4{
+ position: relative;
+ min-height: 1px;
+ padding-left: 15px;
+ padding-right: 15px;
+ width: 21.98%;
 }
+
 .sidepanel {
   margin-bottom: 33px;
 }
+
 .sidepanel .title .footer_widgets{
   color: #878787;
 }
 .sidepanel h6.title {
   margin-bottom: 18px;
 }
-h6, h6 span, h6 a {
+h6, h6 span, a {
   font-size: 15px;
   line-height: 25px;
   font-weight: 600 !important;
@@ -286,6 +297,7 @@ text-transform: uppercase;
 }
 .footer_widgets .sidepanel div{
   color: #878787;
+  font-size: initial;
 }
 .sidepanel h6.title {
   margin-bottom: 18px;
@@ -300,13 +312,9 @@ text-transform: uppercase;
   margin-bottom: -7px;
 }
 .widget_flickr .flickr_badge_image {
-  padding: 0 6px 6px 0;
-  width: 25%;
   display: inline-block;
   position: relative;
   overflow: hidden;
-  margin: 0;
-  height: auto;
   float: none;
   vertical-align: top;
 }
@@ -353,7 +361,9 @@ text-transform: uppercase;
 a {
   color: #525359;
 }
-a, a:hover, a:focus {
+a,
+ a:hover,
+ a:focus {
   text-decoration: none;
   outline: none;
 }
@@ -368,13 +378,32 @@ a, a:hover, a:focus {
     font-style: italic;
     width: 37%;
     display: inline-block;
-    /* float: left; */
-}
-.widget_contacts DIV.widget_contacts_value {
-  color: #cccccc;
+    float:none;
 }
 .widget_contacts .widget_contacts_value {
-  width: 63%;
+  color: #cccccc;
+  width: 59%;
   display: inline-block;
-  /* float: left; */
+  float:none;
+}
+
+.footer_widgets {
+  padding: 54px 0 27px;
+}
+.row .container::before{
+  content: " ";
+  display: table;
+}
+.row .container::after{
+ clear: both;
+}
+.copy {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.copy p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 20px;
 }

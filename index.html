@@ -10,7 +10,8 @@
      <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		 <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css"> 
-		<title>Cafe neo</title>
+    <title>Cafe neo</title>
+    <script src="resources/js/script.js" charset="utf-8"></script>
   </head>
   <body>
    <header>
@@ -22,24 +23,26 @@
             <ul class="main-nav js--main-nav">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
-              <li class="product"><a href="#">Menu</a>
-                <ul class="sub-product">
-                  <li class="sub__product"><a href="#" title="">Drinks</a>
-                      <ul>
-                          <li><a href="#" title="">Cold</a></li>
-                          <li><a href="#" title="">Hot</a></li>
-                          <li><a href="#" title="">Juice</a></li>
-                      </ul>
-                  </li>
-                  <li class="sub__product"><a href="#" title="">Food</a>
-                    <ul>
-                        <li><a href="#" title="">Pastries</a></li>
-                        <li><a href="#" title="">Salad</a></li>
-                        <li><a href="#" title="">Sandwiches</a></li>
-                    </ul>
-                </li>
+              <li class="dropdown"><a href="#">Menu</a>
+                <ul class="dropdown-content">
+                  <a href="#" title="">Drinks</a>
+                     
+                  <a href="#" title="">Food</a>
                 </ul>
-              </li>
+              </li>    
+                
+                <!-- <ul class="sub__dropdown-content">
+                  <li><a href="#" title="">Cold</a></li>
+                  <li><a href="#" title="">Hot</a></li>
+                  <li><a href="#" title="">Juice</a></li>
+              </ul>
+
+              <ul class="sub__dropdown-content">
+                <li><a href="#" title="">Pastries</a></li>
+                <li><a href="#" title="">Salad</a></li>
+                <li><a href="#" title="">Sandwiches</a></li>
+            </ul> -->
+               
               <li><a href="#">In-store</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
@@ -54,12 +57,12 @@
                 </video>
            </div>
            <div class="hero-text-box">
-            <h1>Cafe neo.<br>Number one cafe in Nigeria.</h1>
+            <h1>Cafe neo<br>Number one cafe in Nigeria.</h1>
             <a class="btn btn-full js--scroll-to-plans" href="#">Explore more</a>
           </div>
    </header>
 
-   <section class="section-cities" id="cities">
+   <section class="section-cities js--section-cities" id="cities">
         <div class="row">
           <h2>Product</h2>
         </div>
@@ -128,17 +131,18 @@
           </li>
         </ul>
    </section>
+   
    <div class="footer widget_area">
           <div class="footer_widgets">
             <div class="container">
                 <div class="row sub__row">
-                  <div class="col-sm-3">
+                  <div class="col sm-1-of-4">
                     <div class="sidepanel widget_text">
                       <h6 class="title">About Neo</h6>		
                       <div class="textwidget">Neo represents a modern and vibrant approach to celebrating Africa’s coffee heritage. Sourced from the shores of Lake Kivu in the Hills of Rwanda, each coffee bean is nurtured then roasted to perfection to produce that perfect cup. Our name is what we strive to be and since opening our doors in 2012, we have made a commitment to good old fashioned values.</div>
                     </div>
                   </div>
-                  <div class="col-sm-3">
+                  <div class="col sm-1-of-4">
                         <div class="sidepanel widget_flickr">
                           <h6 class="title">Photo Stream</h6>
                           <div class="flickr_widget_wrapper flickr_widget_wrapper_1452">
@@ -166,7 +170,7 @@
                        </div>
                       </div>
 
-                     <div class="col-sm-3">
+                     <div class="col sm-1-of-4">
                        <div class="sidepanel widget_nav_menu">
                          <h6 class="title">QUICK LINKS</h6>
                          <div class="menu-footer-menu-container">
@@ -188,7 +192,7 @@
                         </div>
                       </div>
                     
-                    <div class="col-sm-3">
+                    <div class="col sm-1-of-4">
                       <div class="sidepanel widget_gt3_contacts">
                        <h6 class="title">CONNECT WITH US</h6>
                        <div class="widget_contacts">               
@@ -213,20 +217,12 @@
 	              </div>
               </div>
            </div>   
-           <!-- <div class="footer_bottom">
-              <div class="container">
-                <div class="footer_content">
-                  <div class="footer_copyright">
-                    Copyright © Cafe Neo. All Rights Reserved					
-      	          </div>
-                  <div class="footer_slogan">
-                   with <i class="fa fa-heart" style="color: red;" aria-hidden="true">
-
-                   </i> from Neo
-                  </div>
-               </div>                
-             </div>
-           </div> -->
+        </div>
+        <div class="copy">
+          <p>
+            Copyright &copy; 2018 by Cafe neo. All rights reserved.
+          </p>
+        </div>
     </div>
     </body>
 </html>
